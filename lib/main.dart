@@ -9,7 +9,7 @@ class shopify extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        
+
       ),
     );
   }
