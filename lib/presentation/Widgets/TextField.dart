@@ -20,7 +20,10 @@ class TextFiled extends StatelessWidget {
           children:[
             Align(
                 alignment: Alignment.topLeft,
-                child: Text(name!,  style: TextStyle(fontSize: 15.sp, fontWeight: FontWeight.w400))),
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 8.0),
+                  child: Text(name!,  style: TextStyle(fontSize: 15.sp, fontWeight: FontWeight.w400)),
+                )),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Container(

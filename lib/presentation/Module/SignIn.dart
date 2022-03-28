@@ -49,7 +49,8 @@ class SignInScreen extends StatelessWidget {
                 Btn(name: 'SIGN IN')
                  , Padding(
                    padding: const EdgeInsets.all(15.0),
-                   child: Center(child: Text('-OR-',style: TextStyle(fontWeight: FontWeight.w300,fontSize: 15.sp),)),
+                   child: Center(child:
+                   Text('-OR-',style: TextStyle(fontWeight: FontWeight.w300,fontSize: 15.sp),)),
                  ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
