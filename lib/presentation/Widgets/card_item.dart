@@ -22,26 +22,26 @@ class Card_item extends StatelessWidget {
             padding: const EdgeInsets.only(top:10),
             child: Text('BeoPlay Speaker',
             style: TextStyle(
-              fontSize: 16.sp,
+              fontSize: 14.sp,
               fontWeight: FontWeight.w500
             ),
             ),
           ),
             Padding(
-              padding: const EdgeInsets.only(top: 3),
+              padding: const EdgeInsets.only(top: 4),
               child: Text('Bang and Olufsen',
           style: TextStyle(
-              fontSize: 12.sp,
+              fontSize: 11.sp,
               fontWeight: FontWeight.w400,
               color: Colors.grey[400]
           ),
           ),
             ),
             Padding(
-              padding: const EdgeInsets.only(top: 3),
+              padding: const EdgeInsets.only(top: 6),
               child: Text('\$755',
           style: TextStyle(
-              fontSize: 16.sp,
+              fontSize: 14.sp,
               fontWeight: FontWeight.w500,
               color: Colors.green[400]
           ),

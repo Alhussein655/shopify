@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopify/presentation/Widgets/card_Brand.dart';
 import 'package:shopify/presentation/Widgets/card_item.dart';
 import 'package:sizer/sizer.dart';
 
@@ -18,7 +19,7 @@ class HomeScreen extends StatelessWidget {
               width: 70.w,
               decoration: BoxDecoration(
                color: Colors.grey[300], 
-               borderRadius: BorderRadius.circular(30.sp),
+               borderRadius: BorderRadius.circular(20.sp),
               ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -61,7 +62,7 @@ class HomeScreen extends StatelessWidget {
                       children: [
                         CircleAvatar(
                           backgroundColor: Colors.black,
-                          radius: 35.sp,
+                          radius: 32.sp,
                         ),
                         Padding(
                           padding: const EdgeInsets.all(8.0),
@@ -93,7 +94,7 @@ class HomeScreen extends StatelessWidget {
                   Text('Best Selling',
                   style: TextStyle(
                     color: Colors.black,
-                    fontSize: 18.sp,
+                    fontSize: 16.sp,
                     fontWeight: FontWeight.bold,
                   ),
                   ),
@@ -101,7 +102,7 @@ class HomeScreen extends StatelessWidget {
                     Text('See all',
                   style: TextStyle(
                     color: Colors.black,
-                    fontSize: 16.sp,
+                    fontSize: 14.sp,
                     fontWeight: FontWeight.w400,
                   ),
                   ),
@@ -113,7 +114,80 @@ class HomeScreen extends StatelessWidget {
           Container(
             height: 43.h,
             width: 100.w,
-            
+            color: Colors.white,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Card_item(),
+                Card_item()
+              ],
+            ),
+          ),
+          //=====================================//
+          //Text Brands===========================
+             Padding(
+               padding: const EdgeInsets.all(8.0),
+               child: Text('Featured Brands',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 16.sp,
+                      fontWeight: FontWeight.bold,
+                    ),
+                    ),
+             ),
+             //====================================//
+              // Item Brand==================
+              Padding(
+                padding: const EdgeInsets.all(5.0),
+                child: Container(
+                  height: 15.h,
+                  width: 100.w,
+                  color: Colors.white,
+                  child: ListView.builder(
+                    scrollDirection: Axis.horizontal,
+                    itemBuilder: (context, index) => Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Card_Brand(),
+                  ),)
+                  ),
+                
+              ),
+              //==========================================//
+              // Text  Recommended======
+                       Padding(
+            padding: const EdgeInsets.only(top: 12,left: 8,right: 8),
+            child: Container(
+              height: 6.h,
+              width: 92.w,
+              color: Colors.white,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text('Recommended',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 16.sp,
+                    fontWeight: FontWeight.bold,
+                  ),
+                  ),
+
+                    Text('See all',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 14.sp,
+                    fontWeight: FontWeight.w400,
+                  ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          //============================================//
+          //Product Recommended====================
+            Container(
+            height: 43.h,
+            width: 100.w,
+            color: Colors.white,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
