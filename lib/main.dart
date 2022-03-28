@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shopify/presentation/Module/Home.dart';
+import 'package:shopify/presentation/Module/HomeS.dart';
 import 'package:shopify/presentation/Module/SignIn.dart';
 import 'package:shopify/presentation/Module/SignUp.dart';
 import 'package:shopify/presentation/Module/verification.dart';
@@ -14,7 +15,7 @@ class shopify extends StatelessWidget {
   Widget build(BuildContext context) {
     return Sizer(
       builder:(context, orientation, deviceType) =>  MaterialApp(
-        home:HomeScreen()
+        home:MyHomePage()
       ),
     );
   }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopify/presentation/Widgets/card_item.dart';
 import 'package:sizer/sizer.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -76,6 +77,49 @@ class HomeScreen extends StatelessWidget {
                   ),
                 );
               },),
+            ),
+          ),
+          //========================================//
+          //Text see all==========================
+          Padding(
+            padding: const EdgeInsets.only(top: 12,left: 8,right: 8),
+            child: Container(
+              height: 6.h,
+              width: 92.w,
+              color: Colors.white,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text('Best Selling',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 18.sp,
+                    fontWeight: FontWeight.bold,
+                  ),
+                  ),
+
+                    Text('See all',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 16.sp,
+                    fontWeight: FontWeight.w400,
+                  ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          //Product Best selling====================
+          Container(
+            height: 43.h,
+            width: 100.w,
+            
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Card_item(),
+                Card_item()
+              ],
             ),
           ),
         ],      

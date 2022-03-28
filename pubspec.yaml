@@ -36,6 +36,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   sizer:
   otp_text_field:
+  sliding_clipped_nav_bar:
 
 dev_dependencies:
   flutter_test:
