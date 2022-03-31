@@ -37,6 +37,7 @@ dependencies:
   sizer:
   otp_text_field:
   sliding_clipped_nav_bar:
+  flutter_svg:
 
 dev_dependencies:
   flutter_test:
@@ -61,7 +62,21 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  #assets:
+  assets:
+    - lib/pho/Icon_Mens Shoe.svg
+    - lib/pho/Icon_B&o.png
+    - lib/pho/Icon_Beats.png
+    - lib/pho/Icon_Cart.svg
+    - lib/pho/Icon_Devices.svg
+    - lib/pho/Icon_Explore.svg
+    - lib/pho/Icon_Gadgets.svg
+    - lib/pho/Icon_Gaming.svg
+    - lib/pho/Icon_User.svg
+    - lib/pho/Icon_Womens Shoe.svg
+    - lib/pho/Image.png
+    - lib/pho/Image2.png
+    - lib/pho/Image3.png
+    - lib/pho/Image4.png
     # assets/images/
   #   - images/a_dot_ham.jpeg
 

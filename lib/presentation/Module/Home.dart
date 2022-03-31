@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:shopify/const.dart';
 import 'package:shopify/presentation/Widgets/card_Brand.dart';
 import 'package:shopify/presentation/Widgets/card_item.dart';
 import 'package:sizer/sizer.dart';
-
+import 'package:flutter_svg/flutter_svg.dart';
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({ Key? key }) : super(key: key);
-
+   HomeScreen({ Key? key }) : super(key: key);
+List list_icon=[icon_men_shose,icon_women,icon_Devices,icon_Gadgets,icon_gaming];
+List list_name=['Men','Women','Devices','Gadgets','Gaming'];
+List list_Brand=[icon_BO,icon_Beats];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -49,7 +52,7 @@ class HomeScreen extends StatelessWidget {
               width: 30.w,
               color: Colors.white,
               child: ListView.builder(
-                itemCount: 5,
+                itemCount: list_icon.length,
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
                 return Padding(
@@ -61,12 +64,13 @@ class HomeScreen extends StatelessWidget {
                     child: Column(
                       children: [
                         CircleAvatar(
-                          backgroundColor: Colors.black,
+                        backgroundColor: Colors.white,
                           radius: 32.sp,
+                          child:SvgPicture.asset(list_icon[index]) ,
                         ),
                         Padding(
                           padding: const EdgeInsets.all(8.0),
-                          child: Text('data',
+                          child: Text(list_name[index],
                           style: TextStyle(
                             fontSize: 12.sp,
                             fontWeight: FontWeight.w400
@@ -118,8 +122,17 @@ class HomeScreen extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                Card_item(),
-                Card_item()
+                Card_item( Tnx:'BeoPlay Speaker',
+                Ttx: 'Bang and Olufsen',
+                Tpx: '\$755',
+                Ph: image1,
+                ),
+                Card_item(
+                Tnx:'Leather Wristwatch',
+                Ttx: 'Tag Heuer',
+                Tpx: '\$755',
+                Ph: image2,
+                )
               ],
             ),
           ),
@@ -144,10 +157,11 @@ class HomeScreen extends StatelessWidget {
                   width: 100.w,
                   color: Colors.white,
                   child: ListView.builder(
+                    itemCount: list_Brand.length,
                     scrollDirection: Axis.horizontal,
                     itemBuilder: (context, index) => Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: Card_Brand(),
+                    child: Card_Brand(ph: list_Brand[index]),
                   ),)
                   ),
                 
@@ -191,8 +205,18 @@ class HomeScreen extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                Card_item(),
-                Card_item()
+                Card_item(
+                   Tnx:'Wireless Remote',
+                Ttx: 'Tesla Inc',
+                Tpx: '\$755',
+                Ph: image3,
+                ),
+                Card_item(
+                   Tnx:'Airpods',
+                Ttx: 'Tag Heuer',
+                Tpx: '\$755',
+                Ph: image4,
+                )
               ],
             ),
           ),

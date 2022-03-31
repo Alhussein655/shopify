@@ -1,0 +1,14 @@
+String icon_men_shose='lib/pho/Icon_Mens Shoe.svg';
+var icon_BO='lib/pho/Icon_B&o.png';
+var icon_Beats='lib/pho/Icon_Beats.png';
+var icon_Cart='lib/pho/Icon_Cart.svg';
+String icon_Devices='lib/pho/Icon_Devices.svg';
+var icon_Ecplore='lib/pho/Icon_Explore.svg';
+var icon_Gadgets='lib/pho/Icon_Gadgets.svg';
+var icon_gaming='lib/pho/Icon_Gaming.svg';
+var icon_user='lib/pho/Icon_User.svg';
+var icon_women='lib/pho/Icon_Womens Shoe.svg';
+var image1='lib/pho/Image.png';
+var image2='lib/pho/Image2.png';
+var image3='lib/pho/Image3.png';
+var image4='lib/pho/Image4.png';

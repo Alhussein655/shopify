@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
+
 import 'package:sizer/sizer.dart';
 
 class Card_item extends StatelessWidget {
-  const Card_item({ Key? key }) : super(key: key);
+   Card_item({ Key? key ,this.Tnx,this.Ttx,this.Tpx,this.Ph}) : super(key: key);
+  String ?Tnx;
+  String ?Ttx;
+  String ?Tpx;
+  String ?Ph;
 
   @override
   Widget build(BuildContext context) {
@@ -16,11 +21,11 @@ class Card_item extends StatelessWidget {
           Container(
             height: 28.h,
             width: 47.w,
-            color: Colors.black,
+            child: Image.asset(Ph!),
           ),
           Padding(
             padding: const EdgeInsets.only(top:10),
-            child: Text('BeoPlay Speaker',
+            child: Text(Tnx!,
             style: TextStyle(
               fontSize: 14.sp,
               fontWeight: FontWeight.w500
@@ -29,7 +34,7 @@ class Card_item extends StatelessWidget {
           ),
             Padding(
               padding: const EdgeInsets.only(top: 4),
-              child: Text('Bang and Olufsen',
+              child: Text(Ttx!,
           style: TextStyle(
               fontSize: 11.sp,
               fontWeight: FontWeight.w400,
@@ -39,7 +44,7 @@ class Card_item extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.only(top: 6),
-              child: Text('\$755',
+              child: Text(Tpx!,
           style: TextStyle(
               fontSize: 14.sp,
               fontWeight: FontWeight.w500,

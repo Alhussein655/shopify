@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:shopify/const.dart';
 import 'package:sizer/sizer.dart';
 
 class Card_Brand extends StatelessWidget {
-  const Card_Brand({ Key? key }) : super(key: key);
-
+   Card_Brand({ Key? key ,this.ph}) : super(key: key);
+var ph;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -15,6 +16,8 @@ class Card_Brand extends StatelessWidget {
          children: [
            CircleAvatar(
              radius: 24.sp,
+            backgroundImage: AssetImage(ph),
+            backgroundColor: Colors.white,
            ),
            Container(
              height: 14.h,
